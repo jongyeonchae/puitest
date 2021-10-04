@@ -1,8 +1,64 @@
 <!DOCTYPE html>
     <head>
+        <link rel="stylesheet" href="styles.css">
     </head> 
     <body>
-        <p> Hello World!</p>
-        <h1> here </h1>
+        <nav class="navBar">
+            <div class="navBar__column">
+                <a class="navBar__title" href="home.html">HOME</a>
+                <a class="navBar__title" href="menu.html">MENU</a>
+                <a class="navBar__title" href="about.html">ABOUT US</a>
+            </div>   
+            <div class="navBar__column">
+                <a class="navBar__title" href="account.html">ACCOUNT</a>
+                <a class="navBar__title" href="cart.html">CART</a> 
+                <a class="navBar__title" href="location.html">LOCATION</a>                
+            </div>
+        </nav>
+        <div class="hero--home">
+            <img class="hero--home__img" src="images/home_hero.png">
+            <p class="hero--home__title"> 
+                Hello there! <br> 
+                We are Bun Bun Bakery Shop 
+            </p>
+        </div>
+        <main>
+            <section class="section--home">
+                <div class="section--home row">
+                    <div class="section--home__recommend">
+                        <h1 class="section-heading">Not sure what to have?</h1>
+                        <h5 class="section-subtitle">Check out our recommendations for you</h5>
+                    </div>
+                    <div class="section--home__operating-info"> 
+                            <h3 class="section--home__operating-info__hours">Hours <span>Open • 8am ~ 8pm</span></h3>
+                            <h3 class="section--home__operating-info__phone">Phone <span>412.454.2233</span></h3>
+                    </div>
+                </div>
+            </section>
+            <section id="card-container">
+                <div class="card menu-recommend">
+                    <img class="menu-photo" src="images/menu_original.jpg">
+                    <h6>For your health</h6>
+                    <h3 class="menu-title">Original (Gluten-Free)</h3>
+                    <h5 class="menu-price">$3.75</h5>
+                    <div class="menu-btn">
+                        <p class="menu-btn__title">Add to Cart</p>
+                    </div> 
+                </div>
+                <div class="card menu-recommend">
+                    <img class="menu-photo" src="images/menu_blackberry.jpg">
+                    <h6>Loved by locals</h6>
+                    <h3 class="menu-title">Blackberry</h3>
+                    <h5 class="menu-price">$4.50</h5>
+                    <div class="menu-btn">
+                        <p class="menu-btn__title">Add to Cart</p>
+                    </div> 
+                </div>
+                <div class="btn-circle">
+                    <div class="btn-circle__title">Find more</div>
+                </div>
+            </section>
+        </main>
+
     </body>
 </html>
